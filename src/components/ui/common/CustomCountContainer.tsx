@@ -1,8 +1,7 @@
 import { useState } from "react";
 import CountUp from "react-countup";
 // import ScrollTrigger from "react-scroll-trigger";
-import { Plus } from "lucide-react";
-import { Link } from "react-router-dom";
+
 
 type CustomCountProps = {
   num: number;
@@ -14,7 +13,7 @@ type CustomCountProps = {
 
 
   const CustomCountContainer: React.FC<CustomCountProps> = ({ num, text1, text2, id }) => {
-    const [counterOn, setCounterOn] = useState<boolean>(true);
+    const [counterOn] = useState<boolean>(true);
     return (
       <div className="flex flex-col gap-2 items-start justify-start transition-transform transform hover:scale-105 duration-300 text-[#262E40]">
         <div className="flex flex-col items-center">

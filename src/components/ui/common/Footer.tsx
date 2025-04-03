@@ -1,17 +1,8 @@
-import { motion } from "framer-motion";
 // import { MapPin, MessageSquareMore, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 export default function Footer() {
-  const footerContent = {
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: 100 },
-  };
-
-  const footerImage = {
-    visible: { y: 0, transition: { duration: 1 } },
-    hidden: { y: -100 },
-  };
+ 
 
   return (
     <div >
@@ -189,36 +180,16 @@ admin@lexnyxoria.com
           <div className="grid grid-cols-2 gap-9 md:grid-cols-4 lg:col-span-2">
             {[
               {
-                title: "Platform", links: ["Browse Mentors", "Book a Session", "Become a Mentor", "Mentorship for Teams",
-                  "Testimonials"
-                ]
+                title: "Platform", links: ["Find Experts", "Offline Services", "Testimonials"]
               },
               {
-                title: "Resources", links: [
-
-                  "Newsletter",
-                  "Books",
-                  "Perks",
-                  "Templates",
-                  "Career Paths",
-                  "Blog"
-                ]
+                title: "Resources", links: ["Newsletter", "Blog", "Privacy Policy"]
               },
               {
-                title: "Company", links: [
-
-                  "About",
-                  "Case Studies",
-                  "Partner Program",
-                  "Code of Conduct",
-                  "Privacy Policy",
-                  "DMCA"
-                ]
+                title: "Company", links: ["About Us", "Case Studies", "Partner Program", "Code of Conduct", "Contact Info"]
               },
               {
-                title: "Support", links: [
-                  "FAQ",
-                  "Contact"]
+                title: "Support", links: ["Lexnyxoria Bot", "FAQ"]
               },
             ].map((section, index) => (
               <div key={index}>
@@ -241,8 +212,9 @@ admin@lexnyxoria.com
             © 2024, Stigmata Techno Solution. Ltd. All Rights Reserved.
           </p>
           <div className="flex items-center justify-center gap-4 mt-4 md:mt-0">
-            {["instagram", "github", "telegram", "linkedin"].map((platform) => (
-              <a key={platform} href="#" target="_blank" rel="noopener noreferrer">
+            {["linkedin"].map((platform) => (
+              <a key={platform} href="https://www.linkedin.com/company/lex-nyxoria-consultants
+" target="_blank" rel="noopener noreferrer">
                 <img className="w-10 transition hover:opacity-75" src={`/${platform}.svg`} alt={`${platform} icon`} />
               </a>
             ))}

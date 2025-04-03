@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 
 interface CountdownTimerProps {
@@ -18,15 +18,8 @@ const INITIAL_TIME_LEFT: CountdownTimeLeft = { days: 0, hrs: 0, mins: 0, secs: 0
 function CountdownTimer({ deadline, title }: CountdownTimerProps) {
   const [timeLeft, setTimeLeft] = useState<CountdownTimeLeft>(INITIAL_TIME_LEFT);
 
-  useEffect(() => {
-    setTimeLeft(calculateTimeLeft());
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
-  function calculateTimeLeft(): CountdownTimeLeft {
+  // Wrap calculateTimeLeft in useCallback to prevent unnecessary re-renders
+  const calculateTimeLeft = useCallback((): CountdownTimeLeft => {
     const now = new Date();
     const difference = deadline.getTime() - now.getTime();
     return difference > 0
@@ -37,7 +30,16 @@ function CountdownTimer({ deadline, title }: CountdownTimerProps) {
           secs: Math.floor((difference / 1000) % 60),
         }
       : INITIAL_TIME_LEFT;
-  }
+  }, [deadline]); // Depend only on deadline
+
+  useEffect(() => {
+    setTimeLeft(calculateTimeLeft());
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+    
+    return () => clearInterval(timer);
+  }, [calculateTimeLeft]); // Depend on the stable function
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#262E40] via-[#203a43] to-[#2c5364] text-white p-6">
@@ -72,7 +74,7 @@ function CountdownTimer({ deadline, title }: CountdownTimerProps) {
         We are busy crafting an energy & innovative experience tailored just for you.
       </p>
       <p className="text-lg text-gray-300 mt-4">
-        In the meantime, we'd love to hear from you. Whether you have Meeds or just want to say hello to our team , feel free to react out, &nbsp;  
+        In the meantime, we'd love to hear from you. Whether you have needs or just want to say hello to our team, feel free to reach out, &nbsp;  
         <a href="mailto:leela@lexnyxoria.com" className="text-blue-400 underline">leela@lexnyxoria.com </a> &nbsp; 
         and <a href="mailto:admin@lexnyxoria.com" className="text-blue-400 underline">admin@lexnyxoria.com</a>.
       </p>
