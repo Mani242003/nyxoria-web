@@ -71,7 +71,7 @@ function CountdownTimer({ deadline, title }: CountdownTimerProps) {
         </p>
         <br/>
       <p className="text-lg text-gray-300">
-        We are busy crafting an energy & innovative experience tailored just for you.
+        We are busy crafting an Engaging & innovative experience needs just for you.
       </p>
       <p className="text-lg text-gray-300 mt-4">
         In the meantime, we'd love to hear from you. Whether you have needs or just want to say hello to our team, feel free to reach out, &nbsp;  

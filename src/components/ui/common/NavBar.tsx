@@ -26,9 +26,9 @@ export const NavBar = () => {
 
       <Link to="/" className="flex items-center space-x-3">
       <img src={logo} alt="Logo" className="h-15 w-15 rounded-full" />
-      <span className="text-xl font-bold tracking-wide" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-        Lexnyxoria
-      </span>
+     <span className="text-xl font-bold tracking-wide" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+  Lexnyxoria
+</span>
     </Link>
 
 

@@ -7,7 +7,7 @@ import { BadgeCheck } from 'lucide-react';
 import CustomCountContainer from "./CustomCountContainer";
 import AnimatedText from "../AnimatedText";
 import { Typewriter } from "react-simple-typewriter";
-import "@fontsource/orbitron";
+// import "@fontsource/orbitron";
 export const Banner = () => {
 
 
@@ -37,7 +37,7 @@ export const Banner = () => {
                         </span>&nbsp; &nbsp;
                         <span className="font-bold mb-4 mb-5 text-[55px] text-[#20A08F] font-bold leading-none">
                             <Typewriter
-                                words={["Claims", "Cost", "Delay Analysis", "Arbitration"]}
+                                words={["Design", "Execution", "Planning", "Delay", "Quantum", "Claims & Costing", "Disputes", "Quality"]}
                                 loop={true}
                                 cursor
                                 typeSpeed={200}
