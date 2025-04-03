@@ -17,7 +17,7 @@ export const Banner = () => {
         <section className="w-full  py-16 bg-white  " style={{ backgroundImage: "url('/')" }}>
             <div className="container mx-auto flex flex-col md:flex-row ">
                 {/* Left Side */}
-                <div className="w-full md:w-1/2 pt-10 pl-3 md:pt-30 md:pl-12">
+                <div className="w-full md:w-1/2 pt-10 pl-4 md:pt-30 md:pl-12">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ export const Banner = () => {
                 </div>
 
                 {/* Right Side (Image) */}
-                <div className="md:w-1/2  flex  bg-cover bg-center"
+                <div className="w-full md:w-1/2  flex  bg-cover bg-center flex justify-center items-center "
                     style={{ backgroundImage: "url('/ng-banner-decor-dark-opt.png')" }}>
 
                     <motion.img
