@@ -11,8 +11,8 @@ const Home: React.FC = () => {
         <NavBar />
         <Banner />
         <CountdownTimer 
-        title="Comming Soon..." 
-        deadline={new Date("2025-09-23T00:00:00.000Z")}
+        title="Coming Soon..." 
+        deadline={new Date(new Date().setDate(new Date().getDate() + 150))}
       />
       <Footer/>
        

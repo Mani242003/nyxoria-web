@@ -60,7 +60,7 @@ export const NavBar = () => {
             ))} */}
           </div>
           <Link to="#connect">
-      <Button className="flex items-center gap-2 px-4 py-2 text-white bg-[#262E40] hover:bg-blue-700 rounded-lg shadow-md">
+      <Button className="flex items-center gap-2 px-4 py-2 text-white bg-[#262E40]  rounded-lg shadow-md">
         <LogIn className="w-5 h-5" />
         Login
       </Button>

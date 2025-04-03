@@ -42,7 +42,7 @@ function CountdownTimer({ deadline, title }: CountdownTimerProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#262E40] via-[#203a43] to-[#2c5364] text-white p-6">
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="text-center mb-10">
-        <h1 className="text-5xl font-extrabold tracking-wide text-white">🚀 Nyxoria is Coming!</h1>
+        <h1 className="text-5xl font-extrabold tracking-wide text-white">🚀 Lexnyxoria is Coming!</h1>
         <p className="text-xl mt-2 text-gray-300">Connecting professionals like never before</p>
       </motion.div>
 
@@ -58,17 +58,28 @@ function CountdownTimer({ deadline, title }: CountdownTimerProps) {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }} className="mt-10 text-center max-w-3xl">
-        <p className="text-lg text-gray-300">
+      <motion.div 
+      initial={{ opacity: 0, y: 20 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 1.5 }} 
+      className="mt-10 text-center max-w-3xl mx-auto"
+    >
+       <p className="text-lg text-gray-300">
           Nyxoria is a cutting-edge online platform designed to connect buyers and sellers of professional services. We specialize across a wide range of industries and categories, making it effortless for clients to engage with top-tier professionals.
         </p>
-        <p className="text-lg text-gray-300 mt-4">
-          In just <span className="text-[#20A08F] font-semibold">150 days</span>, we'll be revolutionizing the professional services space. Stay connected and be part of the journey!
-        </p>
-        <p className="text-lg mt-4">
-          Have questions? Contact us at <a href="mailto:leela@lexnyxoria.com" className="text-[#20A08F] underline">leela@lexnyxoria.com</a> & <a href="mailto:admin@lexnyxoria.com" className="text-[#20A08F] underline">admin@lexnyxoria.com</a>
-        </p>
-      </motion.div>
+        <br/>
+      <p className="text-lg text-gray-300">
+        We are busy crafting an energy & innovative experience tailored just for you.
+      </p>
+      <p className="text-lg text-gray-300 mt-4">
+        In the meantime, we'd love to hear from you. Whether you have Meeds or just want to say hello to our team , feel free to react out, &nbsp;  
+        <a href="mailto:leela@lexnyxoria.com" className="text-blue-400 underline">leela@lexnyxoria.com </a> &nbsp; 
+        and <a href="mailto:admin@lexnyxoria.com" className="text-blue-400 underline">admin@lexnyxoria.com</a>.
+      </p>
+      <p className="text-lg text-gray-300 mt-4 font-bold">
+        STAY TUNED FOR MORE UPDATES!
+      </p>
+    </motion.div>
     </div>
   );
 }
