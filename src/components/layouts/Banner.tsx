@@ -1,11 +1,11 @@
 
 import { motion } from "framer-motion";
-import { Button } from "../../../components/ui/button";
+import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import sample1 from "/sample.png";
 import { BadgeCheck } from 'lucide-react';
-import CustomCountContainer from "./CustomCountContainer";
-import AnimatedText from "../AnimatedText";
+import CustomCountContainer from "../ui/common/CustomCountContainer";
+import AnimatedText from "../ui/AnimatedText";
 import { Typewriter } from "react-simple-typewriter";
 // import "@fontsource/orbitron";
 export const Banner = () => {
@@ -49,7 +49,7 @@ export const Banner = () => {
 
 
                         <span className=" font-bold  text-[55px] text-[#172E59] font-bold leading-none">
-                            Mentorship
+                         Expert Opinions
                         </span>
                         {/* <p className="text-gray-600">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 

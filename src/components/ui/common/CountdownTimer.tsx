@@ -78,7 +78,7 @@ function CountdownTimer({ deadline, title }: CountdownTimerProps) {
         <a href="mailto:leela@lexnyxoria.com" className="text-blue-400 underline">leela@lexnyxoria.com </a> &nbsp; 
         and <a href="mailto:admin@lexnyxoria.com" className="text-blue-400 underline">admin@lexnyxoria.com</a>.
       </p>
-      <p className="text-lg text-gray-300 mt-4 font-bold">
+      <p className="text-lg text-gray-300 mt-15 my-10 font-bold">
         STAY TUNED FOR MORE UPDATES!
       </p>
     </motion.div>

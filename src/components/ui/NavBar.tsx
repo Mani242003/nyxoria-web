@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../button";
-import { cn } from "../../../lib/utils";
+import { Button } from "./button";
+import { cn } from "../../lib/utils";
 import logo from "/logo.jpg";
 import { LogIn, Menu } from "lucide-react";
 
@@ -19,7 +19,7 @@ export const NavBar = () => {
   }, []);
 
   return (
-    <header className={cn("fixed top-0 w-full z-50 transition-all border-b border-b-gray-300 px-15", scrolled ? "bg-white shadow-md" : "transparent")}> 
+    <header className={cn("fixed top-0 w-full z-50 transition-all border-b border-b-gray-300 px-0 md:px-15", scrolled ? "bg-white shadow-md" : "transparent")}> 
       <div className="container mx-auto flex items-center justify-between py-2 px-6">
         <Link to="/" className="flex items-center space-x-3">
           <img src={logo} alt="Logo" className="h-15 w-15 rounded-full" />
@@ -62,8 +62,8 @@ export const NavBar = () => {
             <Menu size={24} />
           </button>
           {menuOpen && (
-            <div className="fixed top-0 right-0 w-64 h-full bg-white shadow-lg flex flex-col space-y-6 p-6">
-              {["Home", "About", "Contact"].map((item) => (
+            <div className="fixed top-0 right-0 w-64 h-full bg-white shadow-lg flex flex-col space-y-6 p-6 pt-30">
+              {["Platform", "Use Cases", "Company", "Join Now"].map((item) => (
                 <Link 
                   key={item} 
                   to={`#${item}`} 
