@@ -53,7 +53,7 @@ function CountdownTimer({ deadline, title }: CountdownTimerProps) {
         <div className="grid grid-cols-4 gap-6">
           {Object.entries(timeLeft).map(([unit, value]) => (
             <div key={unit} className="flex flex-col items-center">
-              <div className="w-24 h-24 flex items-center justify-center bg-[#20A08F] text-4xl font-bold rounded-xl shadow-md transform transition-transform hover:scale-105">{value}</div>
+              <div className="w-14 h-14 sm:w-24 sm:h-24  flex items-center justify-center bg-[#20A08F] text-2xl sm:text-4xl font-bold rounded-xl shadow-md transform transition-transform hover:scale-105">{value}</div>
               <p className="text-sm text-gray-300 mt-2 uppercase font-medium">{unit}</p>
             </div>
           ))}

@@ -90,9 +90,9 @@ admin@lexnyxoria.com
       </div> */}
       {/* contact-us */}
       <div className="flex min-h-screen bg-gray-100">
-        <div className="w-full bg-white p-8 flex flex-col md:flex-row gap-8">
+        <div className="w-full bg-white p-2 sm:p-8 flex flex-col md:flex-row gap-8">
           {/* Left Side - Contact Info */}
-          <div className="w-full flex flex-col justify-center text-left text-[#262E40] p-18">
+          <div className="w-full flex flex-col justify-center text-left text-[#262E40] p-1 sm:p-18">
             <h2 className="text-4xl font-extrabold mb-4">
               Connect With Us For Your Solutions Needs
             </h2>
@@ -138,7 +138,7 @@ admin@lexnyxoria.com
           </div>
 
           {/* Right Side - Form */}
-          <div className="w-full p-16 text-white">
+          <div className="w-full p-1 sm:p-16 text-white">
            <div className="bg-[#20A08F] rounded-lg p-8 shadow-lg">
            <h2 className="text-4xl font-extrabold mb-4">Get in Touch</h2>
            <h2 className="text-1xl font-bolder mb-4">We can Reach us anytime</h2>

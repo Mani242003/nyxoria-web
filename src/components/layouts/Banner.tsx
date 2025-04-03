@@ -17,7 +17,7 @@ export const Banner = () => {
         <section className="w-full  py-16 bg-white  " style={{ backgroundImage: "url('/')" }}>
             <div className="container mx-auto flex flex-col md:flex-row ">
                 {/* Left Side */}
-                <div className="md:w-1/2 pt-30 pl-12">
+                <div className="w-full md:w-1/2 pt-10 pl-3 md:pt-30 md:pl-12">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -32,10 +32,10 @@ export const Banner = () => {
                         />
 
 
-                        <span className=" font-bold mb-4 mb-5 text-[55px] text-[#172E59] font-bold leading-none">
+                        <span className=" font-bold mb-4 mb-5 text-[45px] sm:text-[55px] text-[#172E59] font-bold leading-none">
                             1-on-1
                         </span>&nbsp; &nbsp;
-                        <span className="font-bold mb-4 mb-5 text-[55px] text-[#20A08F] font-bold leading-none">
+                        <span className="font-bold mb-4 mb-5 text-[45px] sm:text-[55px] text-[#20A08F] font-bold leading-none">
                             <Typewriter
                                 words={["Design", "Execution", "Planning", "Delay", "Quantum", "Claims & Costing", "Disputes", "Quality"]}
                                 loop={true}
@@ -48,7 +48,7 @@ export const Banner = () => {
                         </span><br />
 
 
-                        <span className=" font-bold  text-[55px] text-[#172E59] font-bold leading-none">
+                        <span className=" font-bold  text-[45px] sm:text-[55px] text-[#172E59] font-bold leading-none">
                          Expert Opinions
                         </span>
                         {/* <p className="text-gray-600">
